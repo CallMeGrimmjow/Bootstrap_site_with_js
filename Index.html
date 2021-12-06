@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en, fr">
+<head>
+    <title>Tableau des moyennes</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+</head>
+<body>
+<!--note finale-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Mes Moyennes</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-end">Note finale/CFC:</h2>
+        </div>
+        <div class="col-6">
+            <select aria-label="readonly input example" class="form-select" id="moyenne-finale" style="width: 28%">
+                <option id="moyenne-cfc"></option>
+            </select>
+        </div>
+        <div class="col-12">
+            <div class="text-center">
+                <p id="alerte"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--note finale-->
+
+
+<!--Moyennes generales-->
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col">
+            <h2 class="text-center">Compétences de base élargies</h2>
+            <select aria-label="Default select example" class="form-select" id="base_elargies_grade">
+                <option id="moyenne-base-elargies"></option>
+            </select>
+            <p class="text-center"><b>10%</b></p>
+        </div>
+        <div class="col">
+            <h2 class="text-center">Culture générale</h2>
+            <select aria-label="Default select example" class="form-select" id="culture_g_grade">
+                <option id="moyenne-ecg"></option>
+            </select>
+            <p class="text-center"><b>20%</b></p>
+        </div>
+        <div class="col">
+            <h2 class="text-center">Compétences en informatique</h2>
+            <select aria-label="Default select example" class="form-select" id="informatique_grade">
+                <option id="moyenne-ict"></option>
+            </select>
+            <p class="text-center"><b>30%</b></p>
+        </div>
+        <div class="col">
+            <h2 class="text-center">TPI</h2>
+            <select aria-label="Disabled select example" class="form-select" id="tpi_grade">
+                <option disabled selected>Saisissez votre note</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+                <option value="5.5">5.5</option>
+                <option value="6">6</option>
+            </select>
+            <p class="text-center"><b>40%</b></p>
+        </div>
+    </div>
+</div>
+<!--Moyennes generales-->
+
+
+<!--Competences de base elargies-->
+<div class="container col-12">
+    <div class="row align-items-center">
+        <h3>Compétences de base élargies</h3>
+        <p>
+            <a aria-controls="multiCollapseExample1" aria-expanded="false" class="btn btn-primary"
+               data-bs-toggle="collapse"
+               href="#multiCollapseExample1" role="button">Anglais</a>
+            <button aria-controls="multiCollapseExample2" aria-expanded="false" class="btn btn-primary"
+                    data-bs-target="#multiCollapseExample2" data-bs-toggle="collapse" type="button">
+                Maths
+            </button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="input-group, collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        <p-6>Anglais 1</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="eng_1">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Anglais 2</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="eng_2">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Anglais 3</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="eng_3">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Anglais 4</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="eng_4">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Anglais 5</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="eng_5">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group, collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        <p-6>Maths 1</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="maths_1">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Maths 2</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="maths_2">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <br>
+                        <p-6>Maths 3</p-6>
+                        <select aria-label="Disabled select example" class="form-select" id="maths_3">
+                            <option disabled selected>Saisissez votre note</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--Competences de base elargies-->
+
+
+            <!--Culture generale-->
+            <div class="container col-12">
+                <h3 class="text-center">Culture générale</h3>
+                <p class="text-center">
+                    <a aria-controls="multiCollapseExample3" aria-expanded="false" class="btn btn-primary"
+                       data-bs-toggle="collapse"
+                       href="#multiCollapseExample3" role="button">Société</a>
+                    <button aria-controls="multiCollapseExample4" aria-expanded="false" class="btn btn-primary"
+                            data-bs-target="#multiCollapseExample4" data-bs-toggle="collapse"
+                            type="button">Langue & Communication
+                    </button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group, collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body">
+                                <p-6>Société 1</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_1">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 2</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_2">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 3</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_3">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 4</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_4">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 5</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_5">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 6</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_6">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 7</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_7">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>Société 8</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="society_8">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group, collapse multi-collapse" id="multiCollapseExample4">
+                            <div class="card card-body">
+                                <p-6>L&C 1</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_1">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 2</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_2">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 3</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_3">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 4</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_4">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 5</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_5">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 6</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_6">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 7</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_7">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <br>
+                                <p-6>L&C 8</p-6>
+                                <select aria-label="Disabled select example" class="form-select" id="lc_8">
+                                    <option disabled selected>Saisissez votre note</option>
+                                    <option value="1">1</option>
+                                    <option value="1.5">1.5</option>
+                                    <option value="2">2</option>
+                                    <option value="2.5">2.5</option>
+                                    <option value="3">3</option>
+                                    <option value="3.5">3.5</option>
+                                    <option value="4">4</option>
+                                    <option value="4.5">4.5</option>
+                                    <option value="5">5</option>
+                                    <option value="5.5">5.5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Culture generale-->
+
+
+                <!--Competences en informatique-->
+                <div class="container col-12">
+                    <h3 class="text-end">Compétences en informatique</h3>
+                    <p class="text-end">
+                        <a aria-controls="multiCollapseExample5" aria-expanded="false" class="btn btn-primary"
+                           data-bs-toggle="collapse"
+                           href="#multiCollapseExample5" role="button">Modules EPSIC</a>
+                        <button aria-controls="multiCollapseExample6" aria-expanded="false" class="btn btn-primary"
+                                data-bs-target="#multiCollapseExample6" data-bs-toggle="collapse"
+                                type="button">Modules CIE
+                        </button>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group, collapse multi-collapse" id="multiCollapseExample5">
+                                <div class="card card-body">
+                                    <p-6 id="weight-ict">80%</p-6>
+                                    <select aria-label="Disabled select example" class="form-select" id="epsic_grade">
+                                        <option disabled selected>Saisissez votre note</option>
+                                        <option value="1">1</option>
+                                        <option value="1.5">1.5</option>
+                                        <option value="2">2</option>
+                                        <option value="2.5">2.5</option>
+                                        <option value="3">3</option>
+                                        <option value="3.5">3.5</option>
+                                        <option value="4">4</option>
+                                        <option value="4.5">4.5</option>
+                                        <option value="5">5</option>
+                                        <option value="5.5">5.5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group, collapse multi-collapse" id="multiCollapseExample6">
+                                <div class="card card-body">
+                                    <p-6 id="weight-ict">20%</p-6>
+                                    <select aria-label="Disabled select example" class="form-select" id="cie_grade">
+                                        <option disabled selected>Saisissez votre note</option>
+                                        <option value="1">1</option>
+                                        <option value="1.5">1.5</option>
+                                        <option value="2">2</option>
+                                        <option value="2.5">2.5</option>
+                                        <option value="3">3</option>
+                                        <option value="3.5">3.5</option>
+                                        <option value="4">4</option>
+                                        <option value="4.5">4.5</option>
+                                        <option value="5">5</option>
+                                        <option value="5.5">5.5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Competences en informatique-->
+
+                        <script crossorigin="anonymous"
+                                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="quality_time.js"></script>
+</body>
+</html>
